@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- esto lo saque de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Prosto+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/eurostile-extended" rel="stylesheet">
+                
+
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>clase3</title>
+
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <header>
+        <!-- para darle formato a una cosa en particular uso el sistema
+        de clases de las nombro en el css llamandola con un . antes -->
+        <div class="encabezado">
+            <img class="pedidos" src="https://imagenes.compragamer.com/espacioWebSuperior/DC_20221104102804_Kds49r1Y.png" alt="Pedidos unicamente por web">
+        </div>
+       <!-- el alt muestra un texto cuando no carga la imagen -->
+       <div class="barra">
+            <div class="logoContenedor">
+                <img class="logo" src="https://compragamer.net/assets/img/logo-fix.png" alt="">
+            </div>
+                 <div class="busquedaContenedor">
+                        
+                            <input type="text" placeholder="Buscador" class="buscador">
+                            <!-- placeholder sirve para que salga como el label -->
+                         
+                         <button class="lupa">
+                            <i class="bi bi-search"></i>
+                          </button>
+
+                 </div>
+                    <div class="iniciarSesion">
+                        
+                        
+                            <button class="boton"> <i class="bi bi-person-circle"></i> INICIAR SESION</button>
+                       
+                        
+                    </div>
+            <div class="irAlCarrito">
+                <i class="bi bi-basket"></i>
+                <!-- aca pegue lo de arriba despues de buscar en bootstrap -->
+            </div>
+<!-- me quede en la parte que vuelve con la pagina -->
+       </div>
+       <nav class="navegador">
+        <a href="">PRODUCTOS</a>
+        <a href="">ARMÁ TU PC</a>
+        <a href="">AYUDA</a>
+        <a href="">MARCAS SPONSOR</a>
+       </nav>
+    </header>
+    <div>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://imagenes.compragamer.com/bannerPrincipal/DC_20221230095909_9yp9zcsk.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://imagenes.compragamer.com/bannerPrincipal/DC_20230104091944_fzBDXH4O.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://imagenes.compragamer.com/bannerPrincipal/DC_20221118182201_T8den441.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://imagenes.compragamer.com/bannerPrincipal/DC_20221108114043_kAl5Nm8d.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://imagenes.compragamer.com/bannerPrincipal/DC_20221227164002_f1j1ctwm.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://imagenes.compragamer.com/bannerPrincipal/DC_20221222142710_QhpIKJ3S.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://imagenes.compragamer.com/bannerPrincipal/DC_20221104134733_3AWpvspP.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://imagenes.compragamer.com/bannerPrincipal/DC_20230102100003_mnXRrLUR.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://imagenes.compragamer.com/bannerPrincipal/DC_20221128104754_GwdKsNqL.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://imagenes.compragamer.com/bannerPrincipal/DC_20230102100050_YXNubZQN.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://imagenes.compragamer.com/bannerPrincipal/DC_20221104105427_pTu1uEmz.jpg" class="d-block w-100" alt="...">
+              </div>
+              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <section class="terminando">
+
+    <div>
+        <h1 class="noticias"> ULTIMAS NOTICIAS</h1>
+    </div>
+    <div class="cartas">
+        <div class="carta">
+            
+              <img class="imagencarta" src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_31776_Memoria_GeiL_DDR4_16GB_3000MHz_Super_Luce_RGB_Black_646b61f7-mini.jpg" alt="">
+              <h2>Memoria GeiL DDR4 16GB 3000MHz Super Luce RGB Black </h2>
+              <p> $41.500</p>
+            
+        </div>
+        <div class="carta">
+        
+          <img class="imagencarta" src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_31776_Memoria_GeiL_DDR4_16GB_3000MHz_Super_Luce_RGB_Black_646b61f7-mini.jpg" alt="">
+          <h2>Memoria GeiL DDR4 16GB 3000MHz Super Luce RGB Black </h2>
+          <p> $41.500</p>
+        
+    </div>
+        <div class="carta">
+        
+          <img class="imagencarta" src="https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_31776_Memoria_GeiL_DDR4_16GB_3000MHz_Super_Luce_RGB_Black_646b61f7-mini.jpg" alt="">
+          <h2>Memoria GeiL DDR4 16GB 3000MHz Super Luce RGB Black </h2>
+          <p> $41.500</p>
+          
+      </div>
+      
+    </div>
+    </section>
+    <SEction class="imagenes">
+      <div class="marca">
+      <img _ngcontent-prl-c344="" loading="lazy" src="https://compragamer.net/imagenes_marcas/imagen_marca_343_9_603.jpg" alt="Team">
+      </div>
+      <div class="marca">
+      <img _ngcontent-prl-c344="" loading="lazy" src="https://compragamer.net/imagenes_marcas/imagen_marca_316_9_591.png" alt="Nvidia">
+      </div>  
+      <div class="marca">
+      <img _ngcontent-prl-c344="" loading="lazy" src="https://compragamer.net/imagenes_marcas/imagen_marca_303_9_754.jpg" alt="Adata">
+      </div>
+      <div class="marca">
+      <img _ngcontent-prl-c344="" loading="lazy" src="https://compragamer.net/imagenes_marcas/imagen_marca_308_9_866.jpg" alt="Zotac">
+      </div>
+      <div class="marca">
+      <img _ngcontent-prl-c344="" loading="lazy" src="https://compragamer.net/imagenes_marcas/imagen_marca_360_9_796.jpg" alt="GeiL">
+      </div>
+      <div class="marca">
+      <img _ngcontent-prl-c344="" loading="lazy" src="https://compragamer.net/imagenes_marcas/imagen_marca_331_9_273.jpg" alt="Asus">
+      </div>
+      <div class="marca">
+      <img _ngcontent-prl-c344="" loading="lazy" src="https://compragamer.net/imagenes_marcas/imagen_marca_322_9_619.jpg" alt="Western Digital">
+      </div>
+      <div class="marca">
+      <img _ngcontent-prl-c344="" loading="lazy" src="https://compragamer.net/imagenes_marcas/imagen_marca_367_9_389.jpg" alt="Kolink">
+      </div>
+    </SEction>
+    <footer class="pie">
+              <div class="caja uno">
+                <img class="im1" _ngcontent-prl-c345="" src="https://www.afip.gob.ar/images/f960/DATAWEB.jpg" alt="data fiscal" class="img_data">
+              </div>
+              <div class="caja dos">
+                
+                  <p class="ayuda">AYUDA</p>
+                
+                  <p class="siTiene">si tenes sugerencias o comentarios</p>
+                
+                  <a _ngcontent-qhj-c345="" target="_blank" class="contactanos" href="https://compragamer.com/?seccion=60"> CONTACTANOS </a>
+                
+                
+
+              </div>
+              <div class="caja tres">
+                  <div>
+                    <a _ngcontent-qhj-c345="" target="_blank" class="trabajaconnosotros" href="https://compragamer.hiringroom.com/jobs">¡Trabajá con nosotros!</a>
+                  </div>
+                  <div>
+                    <a _ngcontent-qhj-c345="" href="https://forms.office.com/Pages/ResponsePage.aspx?id=Gt8hZfTtKEy3ibqQr_b9XNKr3i5wbSNOqEBfwBpUaF5UQlVLNk9KMkhKQjVYT1dMQlhRTEk1Wk5KMy4u" class="botonDeArrepentimiento">Botón de arrepentimiento</a>
+                  </div>
+              </div>
+              <div class="caja cuatro">
+                <p class="textoCaja4">SIGUENOS EN</p>
+                <div class="iconosCaja4">
+                    <button class="iconos">
+                      <i class="bi bi-twitter"></i>
+                    </button>
+                    <button class="iconos">
+                      <i class="bi bi-youtube"></i>
+                    </button>
+                    <button class="iconos">
+                      <i class="bi bi-facebook"></i>
+                    </button>
+                    <button class="iconos">
+                      <i class="bi bi-instagram"></i>
+                    </button>
+                </div>
+              </div>
+    </footer>
+    <section class="elFinal">
+      Las marcas y logos de compragamer.com compragamer.com/tv compragamer.com/reviews son propiedad de Newton Station SRL <br>Todos los derechos reservados 2017
+    </section>
+</body>
+</html>
+
+
+<!-- mati le da margin a seccion 10 vh 5 vw
+y usa justife conten between -->
+<!-- con font size aumento el tamaño de los iconos y las letras -->

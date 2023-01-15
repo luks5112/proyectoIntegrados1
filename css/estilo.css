@@ -1,0 +1,293 @@
+/* hay que normalizar */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.encabezado{
+    background-color: #fd611a;
+    
+}
+.pedidos{
+    width: auto;
+}
+.barra{/* aca estoy dandole el formato al apdre */
+    display: flex;/* habilite para acomodar */
+    justify-content: center; /* lo alinee en el eje x */
+   padding: 10px 0px;
+    gap: 30px;
+    align-items: center;
+    width: auto;
+    
+}
+.busquedaContenedor{
+display: flex;
+align-items: center;
+width: 224px;
+height: 55px;
+padding-top: 14px;
+padding-bottom: 14px;
+border: black;
+box-shadow: 0px 0px 1px black;
+position:relative;
+
+}
+
+
+.buscador{
+   border: none;
+   padding-left: 10px;
+   
+    /* para el buscador y el icono */
+    /* padding: 14px 0px; */
+
+}
+.lupa{
+    position: absolute;
+    padding-left: 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    right: 20px;
+}
+
+.buscador:hover{
+    cursor: text;
+}
+.iniciarSesion{
+    display: flex;
+    align-items: center;
+    border-collapse: separate;    
+}
+
+
+
+.boton{
+    height: 36px;
+   width: 173px;
+   padding: 0px 16px 0px;
+   border: none;
+   background-color: #fd611a;
+   color: white;
+   font-size: 14px;
+   border-radius: 4px;
+   text-align: center;
+}
+.boton:hover{
+    transition: all 0.3s ease;
+    cursor: pointer;
+   
+}
+.bi{
+    font-size: 20px;
+    margin-right:1.5px;
+}
+
+.navegador{
+    display: flex;
+    background-color: #fd611a;
+    
+
+    justify-content: center;
+    padding: 0px 16px;
+    gap: 120PX;
+    height: 64px;
+    align-items: center;
+    /* duda de los puntos */
+    
+}
+a{
+    color:black;
+    text-decoration: none;
+    font-size: 15PX;
+    
+}
+a:hover{
+    transition: all 0.3s ease;
+    color: white;
+    
+}
+
+@keyframes logo {/* para poner animacion */
+    0%{
+       
+        transform: translatex(-500px);
+        scale: 0.1;
+    
+    }
+    50%{
+        transform:translateX(-100);
+        scale: 0.5;
+    }
+    80%{
+        scale: 0.65;
+    }
+    
+    100%{
+        transform: translateX(0px);
+        scale: 0.7;
+    }
+    
+}
+/* especifico a quien y le pongo la duiracion y le nombre con el cual va aser invodada
+animation-name aca va el nombre
+animation-duration aca va el tiempo
+animation-iteration-count infinite aca pónes los ciclos
+transform translate x */
+.logo{
+    animation-name: logo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+
+.noticias{
+  
+    font-family: 'Eurostile Extended', sans-serif;
+    color: #4e4d4d;
+    
+    height: 32px;
+    margin-top: 12px;
+    margin-bottom: 14px;
+    font-size: 24px;
+   
+    border-bottom: #4e4d4d 2px solid;
+    margin-top: 10px;
+    
+   
+    /* animation-name: logo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; */ 
+    /* las de arriba van en la llave del que llamo */
+    
+                                                    
+ }
+    .carta h2{
+        font-size: 12px;
+        color: black;
+        padding: 16px;
+        
+    }
+    .carta p{
+        color: #4675b9;
+        font-size: 18px;
+    }
+    .imagencarta{
+        width: 95px;
+        height: 85px;
+    }
+            
+.cartas{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 10px;
+    padding: 10px;
+ 
+}
+.carta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 3px 5px rgba(116, 115, 115, 0.678);
+    border-radius: 5px;
+    justify-content: center;
+    width: 30vw;
+    height: 25vh;
+    padding: 16px;
+    margin-top: 10px;
+
+}
+.imagenes{
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    overflow: hidden;
+   
+}
+.pie{
+    display: flex;
+    background-color: #fd611a;
+    justify-content:center ;
+}
+.caja{
+    width: 25vw; /* vw es para el ancho porcentual del dispositivo vh es para el alto */
+    border-left: white 1px solid	;
+    height: 20vh;
+    color: white;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    justify-content: center;
+  
+}
+.uno{
+    position: relative;
+}
+.caja a{
+    color: white;
+}
+.im1{
+    width: 5vw;
+    position: absolute;
+    left: 60%;
+    /* consultas(sacarlo con position)
+    la imagen
+    los vh y vw
+     */
+    
+}
+.dos{
+    padding: 30px;
+}
+.tres{
+    padding: 20px;
+    justify-content: space-between;
+}
+.ayuda{
+    font-size: 16px;
+}
+.siTiene{
+    font-size: 15px;
+}
+.contactanos{
+    border: 1px solid hsla(0,0%,100%,.3215686274509804);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 12px;
+}
+.trabajaconnosotros{
+    border: 1px solid hsla(0,0%,100%,.3215686274509804);
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0px 12px 25px;
+    
+}    
+.botonDeArrepentimiento{
+    border-bottom: 1px solid white;
+}
+.cuatro{
+    align-items: center;
+}
+.iconosCaja4{
+    display: flex;
+    gap: 10px;
+    padding-left: 10px;
+}
+.iconos{
+    background-color: #fd611a;
+   color: white;
+   border: none;
+   
+}
+.elFinal{
+    text-align: center;
+    background-color: #eee;
+    font-size: 14px;
+    color: #333;
+ 
+}

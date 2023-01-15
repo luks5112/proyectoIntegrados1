@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contenedor{
+    background-color:blue;
+    /* display: flex;
+    flex-wrap:wrap ; */ /* esto hizo mati */
+    /* justify-content: center; */
+   /*  gap: 0px; */ /* espaciado entre cajas */
+   /*  min-height: 50vh;
+    text-align: center;  */
+    /* a las lineas 7 y 8 las comente antes de normalizar */
+  /*   min-height: 100vh; 
+  
+    align-items: center;
+/*  */
+display: flex;   /* esta pone automatico el row osea una fila  si quiero columna tengo que poner display flex  flex-direction: colum*/
+flex-wrap: wrap; /* organiza las cajas una al lado de la otra y cuando no hay espacio baja */
+justify-content: center;  /* los centra  si usara columna lo podria sacar*/
+/* ojo que si esta en row para alinear uso el justify.content:center */
+
+/* ademas la propiedad flex wrap me deja poner el gap que es el espacio entre cajas */
+gap: 20px;
+min-height: 100vh;
+align-items: center;  /* los centro en el eje y si esta en columna si esta en row es en x*/
+} 
+/* la linea 6 la comente solo a gap */
+/* consultar a mati esto */
+.caja{
+    width: 300px; /* eso maneja el ancho */
+    height: 300px; /* altura */
+    /* por defecto las pone una abajo de la otra
+    para cambiarlo y que se vaya poniendo una al lado de la otra
+    y baja cuando se acaba el espacio pongo
+    display:inline-block; */
+    /* aca le da las dimensiones a la caja */
+    display:inline-block;
+}
+.uno{
+  background-color: aqua;
+}
+.dos{
+  background-color: blueviolet;
+}
+.tres{
+  background-color: coral;
+}
+.cuatro{
+  background-color: crimson;
+}
+.cinco{
+  background-color: darkorange;
+}
+.seis{
+  background-color: darkgray;
+}
+.siete{
+  background-color: darkslategrey;
+}
+.ocho{
+  background-color: mediumpurple;
+}

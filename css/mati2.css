@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cajaMadre{
+    background-color: burlywood;
+    display: flex;
+    min-height: 50vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  align-items: center;
+
+}
+.caja{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+.uno{
+    background-color: crimson;
+}
+.dos{
+    background-color: cornflowerblue;
+}
